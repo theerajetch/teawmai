@@ -3,7 +3,8 @@ import { NavController } from 'ionic-angular';
 import { AboutPage } from '../about/about';
 import { DownloadPage } from '../download/download';
 import { CloudPage } from '../cloud/cloud';
-import { SlidesPage } from '../slides/slides'
+import { SlidesPage } from '../slides/slides';
+import { CustomerPage } from '../customer/customer';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -26,5 +27,7 @@ export class HomePage {
     gotoSlides(){
       this.navCtrl.push(SlidesPage);
     }
-
+    gotoCustomer(){
+      this.navCtrl.push(CustomerPage);
+    }
 }

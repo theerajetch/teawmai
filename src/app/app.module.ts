@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule, Slide } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { DownloadPage } from '../pages/download/download';
 import { CloudPage } from '../pages/cloud/cloud';
+import { SlidesPage } from '../pages/slides/slides';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CloudPage } from '../pages/cloud/cloud';
     HomePage,
     AboutPage,
     DownloadPage,
-    CloudPage
+    CloudPage,
+    SlidesPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { CloudPage } from '../pages/cloud/cloud';
     HomePage,
     AboutPage,
     DownloadPage,
-    CloudPage
+    CloudPage,
+    SlidesPage
   ],
   providers: [
     StatusBar,

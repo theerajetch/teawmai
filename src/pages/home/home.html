@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Teaw Mai
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="showhead">
+    <img src="assets/imgs/logo.png" alt="">
+  <p>Welcame To Teaw Mai</p>
+  </div>
+  <ion-list>
+    <ion-item (click)="gotoAbout()">
+      <ion-icon name="cloud-done">Cloud Done</ion-icon>
+    </ion-item>   
+    <ion-item>
+      <ion-icon name="cloud-download">DownLoad</ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="cloud">Cloud</ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>
